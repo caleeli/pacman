@@ -1,0 +1,29 @@
+{
+    "name": "coredump/jdd-pacman",
+    "description": "JDD Package Manager",
+    "type": "library",
+    "license": "LGPL-3.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+      "autoload": {
+        "psr-4": {
+            "JDD\\Pacman\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Callizaya",
+            "email": "davidcallizaya@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JDD\\Pacman\\PackageServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "processmaker/nayra": "dev-master"
+    }
+}
